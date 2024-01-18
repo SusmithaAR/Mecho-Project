@@ -1,1 +1,24 @@
-edit pages 
+using EDMS.Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EDMS.ViewModels
+{
+    public class BranchViewModel
+    {
+        public int AutoId { set; get; }
+        
+        public string BranchName { get; set; }
+      
+        public string BranchCode { get; set; } = String.Empty;
+       
+        public string BranchDesc { get; set; }
+        public List<Branch> BranchDetails { get; set; }
+    }
+}
+
